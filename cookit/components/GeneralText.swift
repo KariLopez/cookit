@@ -10,7 +10,7 @@ import SwiftUI
 struct GeneralText: View {
     var content:String = ""
     var body: some View {
-        Text(content).font(Font.custom("Montserrat", size: 12)).foregroundColor(Color.white)
+        Text(content).font(Font.custom("Montserrat", size: 16)).foregroundColor(Color.white)
     }
 }
 

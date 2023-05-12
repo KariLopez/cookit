@@ -9,7 +9,20 @@ import SwiftUI
 
 struct successView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color("black").ignoresSafeArea()
+            
+            VStack {
+                Spacer()
+                Image("logo_og_1x").resizable()
+                    .frame(width: 300.0, height: 275.0)
+                Text("Success!").font(Font.custom("Bebas Neue", size: 32)).fontWeight(.bold).foregroundColor(Color.white)
+                GeneralText(content: "Get ready to make more yummy recipes!")
+                    .padding(.vertical, 50.0)
+                Spacer()
+            }
+          
+        }
     }
 }
 

@@ -30,6 +30,8 @@ struct RecipesListView: View {
                         )
                         
                     }
+                    .padding(/*@START_MENU_TOKEN@*/.horizontal, 7.0/*@END_MENU_TOKEN@*/)
+                    
                 }
             }
         }

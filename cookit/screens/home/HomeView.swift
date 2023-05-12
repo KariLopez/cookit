@@ -36,9 +36,14 @@ struct HomeView: View {
                     
                     HeaderView(label: "Your Favorites")
                     RecipesListView(listType:favorites)
+     
+                    
                     HeaderView(label: "Trending Now")
+                        .padding(.top, 11.0)
                     RecipesListView(listType:trending)
+                    
                     HeaderView(label: "Just Added")
+                        .padding(.top, 11.0)
                     RecipesListView(listType:now)
                 }
             }.padding()
