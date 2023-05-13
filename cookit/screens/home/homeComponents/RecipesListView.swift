@@ -9,9 +9,9 @@ import SwiftUI
 
 
 struct RecipesListView: View {
-    var listType = favorites
-    @State var displayedList = favorites
-
+    var listType = trending
+    @State var displayedList = trending
+    
     var body: some View {
         
         
@@ -21,22 +21,14 @@ struct RecipesListView: View {
                     VStack(alignment: .leading){
                         Image(key)
                         Image("five_star_1x")
-                        Text(listType[key] ?? "").font(Font.custom("Montserrat", size: 12)).fontWeight(.semibold).multilineTextAlignment(.leading).foregroundColor(Color.white).frame(
-                            minWidth: 0,
-                            maxWidth: .infinity,
-                            minHeight: 0,
-                            maxHeight: .infinity,
-                            alignment: .topLeading
-                        )
-                        
-                    }
-                    .padding(/*@START_MENU_TOKEN@*/.horizontal, 7.0/*@END_MENU_TOKEN@*/)
+                        Text(listType[key] ?? "").font(Font.custom("Montserrat", size: 12)).fontWeight(.semibold).foregroundColor(Color.white).multilineTextAlignment(.leading)
+                    }.frame(width: 140.0, height: 204.0)
                     
                 }
             }
         }
-       
-       
+        
+        
         
     }
 }
