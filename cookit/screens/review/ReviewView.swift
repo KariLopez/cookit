@@ -20,6 +20,7 @@ struct ReviewView: View {
                 
                 Image("star_review")
                 PillList()
+                    .padding(.top, 20.0)
                 
                 ButtonView(label:"Submit",buttonColor: "marigold",width: 364,textColor:"white")
             }

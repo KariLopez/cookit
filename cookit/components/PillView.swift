@@ -14,8 +14,9 @@ struct PillView: View {
             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
             
         }
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .foregroundColor(Color("white"))
-        .frame(width: 80.0, height: 39.0)
+        .frame(minWidth: 80,minHeight: 39)
         .background(Color("lightGreen"))
         .cornerRadius(8)
         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/,x:0,y:0)
