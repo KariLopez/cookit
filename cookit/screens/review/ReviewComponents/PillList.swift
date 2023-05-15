@@ -17,19 +17,20 @@ struct PillList: View {
     var body: some View {
         ScrollView{
             LazyVGrid(
-                       columns: columns,
-                       alignment: .leading,
-                       spacing: 10
+                columns: columns,
+                alignment: .center,
+                spacing: 8
             ){
                 ForEach(categories.indices){
                     
                     PillView(label:self.categories[$0])
                 }
                 
-            }
+            }.padding(.horizontal)
+            
         }
         
-      
+        
     }
 }
 
