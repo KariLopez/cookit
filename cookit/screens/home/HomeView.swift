@@ -14,7 +14,6 @@ let trending = ["chickpea_soup":"Chickpea Soup","spinach_salmon":"Creamy Spinach
 
 let now = ["og_salmon":"Orange Salmon", "watermelon_feta":"Watermelon Feta Salad","beef_stew":"Beef Stew"]
 struct HomeView: View {
-    
     var body: some View {
         
         ZStack{
@@ -46,7 +45,11 @@ struct HomeView: View {
                         .padding(.top, 11.0)
                     RecipesListView(listType:now)
                 }
+                Spacer()
+                customView(selectedTab:.constant(.home))
             }.padding()
+           
+            
         }
     }
 }

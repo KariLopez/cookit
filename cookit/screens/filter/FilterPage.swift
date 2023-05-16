@@ -13,24 +13,24 @@ struct FilterPage: View {
     var body: some View {
         ZStack{
             
-            Color("lightgreen")
-               .ignoresSafeArea()
+            Color("DGeen")
+                .ignoresSafeArea()
             
             VStack{
                 
                 Spacer()
-              //  NavigationView {
-                    
-                    List{
-                        ForEach(recipes,id:\.self){ recipes in
-                            HStack{
-                                Text(recipes.capitalized)
-                                Spacer()
-                                Image(systemName: "fork.knife")
-                                    .foregroundColor(Color.green)
-                                
-                          //  }
-                            .padding()
+                NavigationView {
+                
+                List{
+                    ForEach(recipes,id:\.self){ recipes in
+                        HStack{
+                            Text(recipes.capitalized)
+                            Spacer()
+                            Image(systemName: "fork.knife")
+                                .foregroundColor(Color.green)
+                            
+                              }
+                                .padding()
                         }
                         
                         
@@ -38,43 +38,28 @@ struct FilterPage: View {
                     .searchable(text: $searchText)
                     .navigationTitle("Recipe Filters")
                 }
-        
-                
-                VStack{
-                   
-                        NavigationView{
-                              List{
+                NavigationView{
 
-                                      NavigationLink(destination:ChefRecipePageView())
-                                      {
-                                          Spacer()
-                                          Text("Verified chef Recipes")
-                                              .font(.title3)
-                                              .foregroundColor(Color.blue)
-                                              .fontWeight(.bold)
-                                              .fontDesign(.serif)
-                                             Spacer()
-                                      }
-                                  }
-                            }
-                
-                 
-                       
-                
-                    Spacer()
-                    
-                    HStack{
-                       // Spacer()
-                        Image("Recipeimage")
-                            .resizable()
-                            .frame(width: 390, height: 250.0)
-                    }
-                    
-                    .padding()
-              }
-                Spacer()
-        
-        }
+                        NavigationLink(destination:ChefRecipePageView())
+                        {
+                            Spacer()
+                            Text("Verified chef Recipes")
+                                .font(.title3)
+                                .foregroundColor(Color.blue)
+                                .fontWeight(.bold)
+                                .fontDesign(.serif)
+                            Spacer()
+                        }
+                }
+                .frame(width: 306.0, height: 40.0)
+                HStack{
+                    Image("Recipeimage")
+                        .resizable()
+                        .frame(width: 390, height: 250.0)
+                }
+                customView(selectedTab: .constant(.search))
+            }
+            
             VStack{
                 if(searchText == "Chefrecipes"){
                     NavigationView {
@@ -84,27 +69,33 @@ struct FilterPage: View {
                                 Text("Link to chef's Recipes")
                                     .foregroundColor(.blue)
                                     .fontWeight(.semibold)
-
+                                
                                     .navigationTitle("Chef Verified Recipes")
-
-
-
+                                
+                                
+                                
+                                
+                                
                             }
-
+                            
                         }
-
+                        
                     }
                 }
             }
+            
         }
-        Spacer()
+        
+        
     }
+    
     var recipes:[String]{
         let listRecipes = listofRecipe.map{$0.lowercased()}
         return searchText == "" ? listRecipes : listRecipes.filter {
             $0.contains(searchText.lowercased())
         }
     }
+    
     
 }
 

@@ -5,11 +5,18 @@
 //  Created by Karina Lopez on 5/11/23.
 //
 
+
+
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    
     var body: some View {
-        NavigationView{LoginView()}.navigationBarBackButtonHidden(true)
+        NavigationView{LoginView(); FilterPage(); UploadView();RecipeView();ChefRecipePageView()}.navigationBarBackButtonHidden(true)
+        
     }
 }
 
