@@ -15,7 +15,11 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView{LoginView(); FilterPage(); UploadView();RecipeView();ChefRecipePageView()}.navigationBarBackButtonHidden(true)
+        NavigationView{
+            LoginView();
+           // FilterPage(); UploadView(); RecipeView(); ChefRecipePageView()
+            
+        }
         
     }
 }

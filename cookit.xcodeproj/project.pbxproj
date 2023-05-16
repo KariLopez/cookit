@@ -33,6 +33,8 @@
 		C3C79B342A1302FD00618B0B /* clone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B332A1302FD00618B0B /* clone.swift */; };
 		C3C79B362A13033300618B0B /* bookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B352A13033300618B0B /* bookPageView.swift */; };
 		C3C79B382A1303C200618B0B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B372A1303C200618B0B /* SwiftUIView.swift */; };
+		C3C79B3B2A143A8600618B0B /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B392A143A8600618B0B /* LeaderboardView.swift */; };
+		C3C79B3C2A143A8600618B0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3A2A143A8600618B0B /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		C3C79B332A1302FD00618B0B /* clone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clone.swift; sourceTree = "<group>"; };
 		C3C79B352A13033300618B0B /* bookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookPageView.swift; sourceTree = "<group>"; };
 		C3C79B372A1303C200618B0B /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C3C79B392A143A8600618B0B /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		C3C79B3A2A143A8600618B0B /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,17 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				C3C79B0D2A0DCB3C00618B0B /* HeaderView.swift */,
-				C3C79B0E2A0DCB3C00618B0B /* RecipesList */,
 				C3C79B0F2A0DCB3C00618B0B /* RecipesListView.swift */,
 			);
 			path = homeComponents;
-			sourceTree = "<group>";
-		};
-		C3C79B0E2A0DCB3C00618B0B /* RecipesList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RecipesList;
 			sourceTree = "<group>";
 		};
 		C3C79B122A0DCB9400618B0B /* LoginComponents */ = {
@@ -261,6 +257,8 @@
 		C3C79B222A0DCE9600618B0B /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				C3C79B392A143A8600618B0B /* LeaderboardView.swift */,
+				C3C79B3A2A143A8600618B0B /* ProfileView.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -361,9 +359,11 @@
 				C3C79B112A0DCB3C00618B0B /* RecipesListView.swift in Sources */,
 				C3C79B322A12FCFC00618B0B /* customView.swift in Sources */,
 				C3C79B1B2A0DCBDD00618B0B /* ReviewView.swift in Sources */,
+				C3C79B3B2A143A8600618B0B /* LeaderboardView.swift in Sources */,
 				C342EFA92A0DC3AC00713552 /* cookitApp.swift in Sources */,
 				C3C79AFB2A0DCA0300618B0B /* ButtonView.swift in Sources */,
 				C3C79B142A0DCB9400618B0B /* InputView.swift in Sources */,
+				C3C79B3C2A143A8600618B0B /* ProfileView.swift in Sources */,
 				C3C79B362A13033300618B0B /* bookPageView.swift in Sources */,
 				C3C79B2D2A0EFCB400618B0B /* SampleRecipe.swift in Sources */,
 				C3C79B2F2A0EFD1100618B0B /* ListView.swift in Sources */,

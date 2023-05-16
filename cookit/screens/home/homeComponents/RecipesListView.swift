@@ -18,11 +18,37 @@ struct RecipesListView: View {
         ScrollView(.horizontal){
             HStack{
                 ForEach(Array(listType.keys), id:\.self){key in
-                    VStack(alignment: .leading){
-                        Image(key)
-                        Image("five_star_1x")
-                        Text(listType[key] ?? "").font(Font.custom("Montserrat", size: 12)).fontWeight(.semibold).foregroundColor(Color.white).multilineTextAlignment(.leading)
-                    }.frame(width: 140.0, height: 204.0)
+                    
+                    if key == "fried_rice_1x"{
+                        NavigationLink(destination: RecipeView()) {
+                            VStack(alignment: .leading){
+                                    Image(key)
+                                    Image("five_star_1x")
+                                    Text(listType[key] ?? "").font(Font.custom("Montserrat", size: 12)).fontWeight(.semibold).foregroundColor(Color.white).multilineTextAlignment(.leading)
+                                
+                                
+                               
+                            }.frame(width: 140.0, height: 204.0)
+                        }
+                    }
+                    else{
+                        VStack(alignment: .leading){
+                            Image(key)
+                            if key=="spinach_salmon"{
+                                NavigationLink(destination: ReviewView()){
+                                    Image("five_star_1x")
+                                }
+                            }
+                            else{
+                                Image("five_star_1x")
+
+                            }
+                            Text(listType[key] ?? "").font(Font.custom("Montserrat", size: 12)).fontWeight(.semibold).foregroundColor(Color.white).multilineTextAlignment(.leading)
+                            
+                            
+                            
+                        }.frame(width: 140.0, height: 204.0)
+                    }
                     
                 }
             }

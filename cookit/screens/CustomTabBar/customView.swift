@@ -68,6 +68,7 @@ struct customView: View {
                         
                     }
                 }
+                
                 NavigationLink(destination: UploadView()){
                     GeometryReader{ geo in
                         
@@ -84,62 +85,58 @@ struct customView: View {
                     }
                 }
                 
-                
-          
-                
-        
-                
+                NavigationLink(destination: clone()){
+                    GeometryReader{ geo in
+                        
+                        if selectedTab == .ebook
+                        {
+                            Rectangle()
+                                .foregroundColor(.blue)
+                                .frame(width: geo.size.width/2, height:4) .padding(.leading, geo.size.width/4)
+                        }
+                        
+                        VStack(alignment:.center, spacing: 4){
+                            Image("page")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 32, height: 35)
+                                .foregroundColor(Color("lightGreen"))
+                            
+                        }
+                        .frame(width: geo.size.width, height: geo.size.height)
+                    }
+
+                }
+                /*
                 Button {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/// Swith to Ebook
                     // selectedTab = .ebook
                 }
             label: {
-                GeometryReader{ geo in
-                    
-                    if selectedTab == .ebook
-                    {
-                        Rectangle()
-                            .foregroundColor(.blue)
-                            .frame(width: geo.size.width/2, height:4) .padding(.leading, geo.size.width/4)
-                    }
-                    
-                    VStack(alignment:.center, spacing: 4){
-                        Image("page")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 32, height: 35)
-                        
-                    }
-                    .frame(width: geo.size.width, height: geo.size.height)
-                }
             }
-            .tint(Color("lightGreen"))
-                Button {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/// Swith to Person
-                    // selectedTab = .person
-                }
-            label: {
-                GeometryReader{ geo in
-                    if selectedTab == .person
-                    {
-                        
-                        Rectangle()
-                            .foregroundColor(.blue)
-                            .frame(width: geo.size.width/2, height:4) .padding(.leading, geo.size.width/4)
-                    }
-                    VStack(alignment:.center, spacing: 4){
-                        Image("user")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 34, height: 36)
-                        
-                    }
-                    .frame(width: geo.size.width, height: geo.size.height)
-                }
-            }
-            .tint(Color("lightGreen"))
+            .tint(Color("lightGreen"))*/
                 
-                
+                NavigationLink(destination:ProfileView()){
+                    GeometryReader{ geo in
+                        if selectedTab == .person
+                        {
+                            
+                            Rectangle()
+                                .foregroundColor(.blue)
+                                .frame(width: geo.size.width/2, height:4) .padding(.leading, geo.size.width/4)
+                        }
+                        VStack(alignment:.center, spacing: 4){
+                            Image("user")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 34, height: 36)
+                                .foregroundColor(Color("lightGreen"))
+                            
+                        }
+                        .frame(width: geo.size.width, height: geo.size.height)
+                    }
+                    
+                }
             }
             .frame(height:82)
         }

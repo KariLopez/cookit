@@ -8,7 +8,7 @@
 import SwiftUI
 let favorites = ["feta_pizza_1x":"Spinach Feta Pizza",
                  "fajitas":"Homemade Fajita Tacos",
-                 "sweet_fries":"Sweet Potato Fries"]
+                 "fried_rice_1x":"Veggie Fried Rice"]
 
 let trending = ["chickpea_soup":"Chickpea Soup","spinach_salmon":"Creamy Spinach Pan Seared Salmon","veggie_pho":"Vegeterian Pho"]
 

@@ -62,7 +62,7 @@ struct FilterPage: View {
             
             VStack{
                 if(searchText == "Chefrecipes"){
-                    NavigationView {
+                    //NavigationView {
                         List{
                             NavigationLink(destination: ChefRecipePageView())
                             {
@@ -80,7 +80,7 @@ struct FilterPage: View {
                             
                         }
                         
-                    }
+                    //}
                 }
             }
             
