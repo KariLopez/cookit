@@ -22,7 +22,7 @@ struct ReviewView: View {
        
                 GeneralText(content: "How would you rate this recipe?")
                 
-                Image("star_review").padding(.top, 15.0).frame(width: 182.0, height: 31.0)
+                Image("star_review").padding(.top, 15.0).frame(width: 182.0, height: 31.0)  
                 PillList()
                     .padding(.top, 35.0)
                 

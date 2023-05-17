@@ -44,7 +44,7 @@ struct ChefRecipePageView: View {
                         //NavigationView{
                                List{
 
-                            NavigationLink(destination:ChefRecipePageView())
+                            NavigationLink(destination:clone())
                                        {
                                            Spacer()
                                            Text("Gordon Ramsey Recipes")
@@ -52,7 +52,7 @@ struct ChefRecipePageView: View {
                                                .font(.headline)
                                            Spacer()
                                        }
-                                   NavigationLink(destination:FilterPage())
+                                   NavigationLink(destination:bookPageView())
                                    {
                                        Spacer()
                                        Text("Guy Fieri")

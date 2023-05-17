@@ -36,10 +36,19 @@ struct UploadView: View {
                     .padding()
                 Text("Supported Formats: JPEG, PNG")
                     .padding(.top, -15.0)
-                Button("Submit") {
-                }.frame(maxWidth:300, alignment: .center).padding()
+                
+            
+
+                Button(action: {
+                    print("Floating Button Click")
+                }, label: {
+                    NavigationLink(destination: successView()) {
+                         Text("Submit")
+                     }
+                }).frame(maxWidth:300, alignment: .center).padding()
                     .background(Color("marigold")).cornerRadius(12)
-                    .padding()
+                .padding()
+              
                 customView(selectedTab: .constant(.add))
             }.navigationTitle("Upload Recipe").navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
