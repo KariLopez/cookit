@@ -17,8 +17,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             LoginView();
-           // FilterPage(); UploadView(); RecipeView(); ChefRecipePageView()
-            
         }
         
     }

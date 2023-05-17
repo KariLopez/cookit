@@ -12,7 +12,7 @@ struct UploadView: View {
     @State var description = ""
     @State var recipeInstructions = ""
     var body: some View {
-        NavigationView{
+        //NavigationView{
             VStack(alignment: .center, spacing: 1.0){
                 Form{
                     Section{
@@ -42,9 +42,9 @@ struct UploadView: View {
                     .padding()
                 customView(selectedTab: .constant(.add))
             }.navigationTitle("Upload Recipe").navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
             
-        }
-
+        //}
 
     }
     

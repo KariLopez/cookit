@@ -47,11 +47,14 @@ struct HomeView: View {
                 }
                 Spacer()
                 customView(selectedTab:.constant(.home))
-            }.padding()
+            }.padding().navigationBarBackButtonHidden(true)
+            
            
             
         }
+        
     }
+       
 }
 
 struct HomeView_Previews: PreviewProvider {

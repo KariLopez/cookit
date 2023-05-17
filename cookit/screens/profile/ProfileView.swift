@@ -41,7 +41,7 @@ struct ProfileView: View {
             Spacer()
             customView(selectedTab:.constant(.person))
 
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

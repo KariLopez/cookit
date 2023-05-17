@@ -19,7 +19,7 @@ struct FilterPage: View {
             VStack{
                 
                 Spacer()
-                NavigationView {
+               NavigationView {
                 
                 List{
                     ForEach(recipes,id:\.self){ recipes in
@@ -38,7 +38,7 @@ struct FilterPage: View {
                     .searchable(text: $searchText)
                     .navigationTitle("Recipe Filters")
                 }
-                NavigationView{
+               // NavigationView{
 
                         NavigationLink(destination:ChefRecipePageView())
                         {
@@ -50,19 +50,19 @@ struct FilterPage: View {
                                 .fontDesign(.serif)
                             Spacer()
                         }
-                }
+                //}
                 .frame(width: 306.0, height: 40.0)
                 HStack{
                     Image("Recipeimage")
-                        .resizable()
+                    .resizable()
                         .frame(width: 390, height: 250.0)
                 }
                 customView(selectedTab: .constant(.search))
-            }
+            }.navigationBarBackButtonHidden(true)
             
             VStack{
                 if(searchText == "Chefrecipes"){
-                    //NavigationView {
+                   // NavigationView {
                         List{
                             NavigationLink(destination: ChefRecipePageView())
                             {
@@ -80,7 +80,7 @@ struct FilterPage: View {
                             
                         }
                         
-                    //}
+                   // }
                 }
             }
             
