@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ReviewView: View {
+    @State var rating = 0
     var body: some View {
         ZStack{
             Color("black").ignoresSafeArea()
@@ -22,7 +23,8 @@ struct ReviewView: View {
        
                 GeneralText(content: "How would you rate this recipe?")
                 
-                Image("star_review").padding(.top, 15.0).frame(width: 182.0, height: 31.0)  
+                RatingView(rating: $rating)
+                
                 PillList()
                     .padding(.top, 35.0)
                 

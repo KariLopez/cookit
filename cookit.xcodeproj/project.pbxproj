@@ -35,6 +35,7 @@
 		C3C79B382A1303C200618B0B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B372A1303C200618B0B /* SwiftUIView.swift */; };
 		C3C79B3B2A143A8600618B0B /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B392A143A8600618B0B /* LeaderboardView.swift */; };
 		C3C79B3C2A143A8600618B0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3A2A143A8600618B0B /* ProfileView.swift */; };
+		C3C79B3E2A147B5200618B0B /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3D2A147B5200618B0B /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		C3C79B372A1303C200618B0B /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C3C79B392A143A8600618B0B /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		C3C79B3A2A143A8600618B0B /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C3C79B3D2A147B5200618B0B /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C79B182A0DCBD200618B0B /* PillList.swift */,
+				C3C79B3D2A147B5200618B0B /* RatingView.swift */,
 			);
 			path = ReviewComponents;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				C3C79B2B2A0EFC9800618B0B /* FilterPage.swift in Sources */,
 				C3C79B012A0DCA3300618B0B /* PillView.swift in Sources */,
 				C3C79B382A1303C200618B0B /* SwiftUIView.swift in Sources */,
+				C3C79B3E2A147B5200618B0B /* RatingView.swift in Sources */,
 				C3C79B242A0EF8B600618B0B /* successView.swift in Sources */,
 				C3C79B0C2A0DCB1B00618B0B /* HomeView.swift in Sources */,
 				C3C79B032A0DCA9900618B0B /* LogoView.swift in Sources */,
