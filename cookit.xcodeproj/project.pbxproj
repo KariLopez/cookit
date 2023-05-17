@@ -32,10 +32,14 @@
 		C3C79B322A12FCFC00618B0B /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B312A12FCFC00618B0B /* customView.swift */; };
 		C3C79B342A1302FD00618B0B /* clone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B332A1302FD00618B0B /* clone.swift */; };
 		C3C79B362A13033300618B0B /* bookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B352A13033300618B0B /* bookPageView.swift */; };
-		C3C79B382A1303C200618B0B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B372A1303C200618B0B /* SwiftUIView.swift */; };
 		C3C79B3B2A143A8600618B0B /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B392A143A8600618B0B /* LeaderboardView.swift */; };
 		C3C79B3C2A143A8600618B0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3A2A143A8600618B0B /* ProfileView.swift */; };
 		C3C79B3E2A147B5200618B0B /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3D2A147B5200618B0B /* RatingView.swift */; };
+		C3C79B402A1590B500618B0B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B3F2A1590B500618B0B /* SwiftUIView.swift */; };
+		C3C79B452A15916600618B0B /* Clone4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B432A15916600618B0B /* Clone4.swift */; };
+		C3C79B462A15916600618B0B /* Clone3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B442A15916600618B0B /* Clone3.swift */; };
+		C3C79B482A15917500618B0B /* Clone5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B472A15917500618B0B /* Clone5.swift */; };
+		C3C79B4A2A15917F00618B0B /* Clon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C79B492A15917F00618B0B /* Clon2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,10 +71,14 @@
 		C3C79B312A12FCFC00618B0B /* customView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
 		C3C79B332A1302FD00618B0B /* clone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clone.swift; sourceTree = "<group>"; };
 		C3C79B352A13033300618B0B /* bookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookPageView.swift; sourceTree = "<group>"; };
-		C3C79B372A1303C200618B0B /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C3C79B392A143A8600618B0B /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		C3C79B3A2A143A8600618B0B /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C3C79B3D2A147B5200618B0B /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		C3C79B3F2A1590B500618B0B /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = "../../../../work 2/work/SwiftUIView.swift"; sourceTree = "<group>"; };
+		C3C79B432A15916600618B0B /* Clone4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clone4.swift; sourceTree = "<group>"; };
+		C3C79B442A15916600618B0B /* Clone3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clone3.swift; sourceTree = "<group>"; };
+		C3C79B472A15917500618B0B /* Clone5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clone5.swift; sourceTree = "<group>"; };
+		C3C79B492A15917F00618B0B /* Clon2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clon2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +249,11 @@
 			isa = PBXGroup;
 			children = (
 				C3C79B332A1302FD00618B0B /* clone.swift */,
-				C3C79B372A1303C200618B0B /* SwiftUIView.swift */,
+				C3C79B3F2A1590B500618B0B /* SwiftUIView.swift */,
+				C3C79B442A15916600618B0B /* Clone3.swift */,
+				C3C79B432A15916600618B0B /* Clone4.swift */,
+				C3C79B492A15917F00618B0B /* Clon2.swift */,
+				C3C79B472A15917500618B0B /* Clone5.swift */,
 				C3C79B352A13033300618B0B /* bookPageView.swift */,
 			);
 			path = ebook;
@@ -353,19 +365,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C79B2B2A0EFC9800618B0B /* FilterPage.swift in Sources */,
+				C3C79B482A15917500618B0B /* Clone5.swift in Sources */,
 				C3C79B012A0DCA3300618B0B /* PillView.swift in Sources */,
-				C3C79B382A1303C200618B0B /* SwiftUIView.swift in Sources */,
 				C3C79B3E2A147B5200618B0B /* RatingView.swift in Sources */,
 				C3C79B242A0EF8B600618B0B /* successView.swift in Sources */,
 				C3C79B0C2A0DCB1B00618B0B /* HomeView.swift in Sources */,
 				C3C79B032A0DCA9900618B0B /* LogoView.swift in Sources */,
 				C342EFAB2A0DC3AC00713552 /* ContentView.swift in Sources */,
 				C3C79B112A0DCB3C00618B0B /* RecipesListView.swift in Sources */,
+				C3C79B4A2A15917F00618B0B /* Clon2.swift in Sources */,
+				C3C79B452A15916600618B0B /* Clone4.swift in Sources */,
 				C3C79B322A12FCFC00618B0B /* customView.swift in Sources */,
 				C3C79B1B2A0DCBDD00618B0B /* ReviewView.swift in Sources */,
 				C3C79B3B2A143A8600618B0B /* LeaderboardView.swift in Sources */,
 				C342EFA92A0DC3AC00713552 /* cookitApp.swift in Sources */,
 				C3C79AFB2A0DCA0300618B0B /* ButtonView.swift in Sources */,
+				C3C79B462A15916600618B0B /* Clone3.swift in Sources */,
 				C3C79B142A0DCB9400618B0B /* InputView.swift in Sources */,
 				C3C79B3C2A143A8600618B0B /* ProfileView.swift in Sources */,
 				C3C79B362A13033300618B0B /* bookPageView.swift in Sources */,
@@ -374,6 +389,7 @@
 				C3C79B162A0DCBA600618B0B /* LoginView.swift in Sources */,
 				C3C79B342A1302FD00618B0B /* clone.swift in Sources */,
 				C3C79AFD2A0DCA1100618B0B /* GeneralText.swift in Sources */,
+				C3C79B402A1590B500618B0B /* SwiftUIView.swift in Sources */,
 				C3C79B1E2A0DCD1200618B0B /* UploadView.swift in Sources */,
 				C3C79B292A0EFC8700618B0B /* ChefRecipePageView.swift in Sources */,
 				C3C79B192A0DCBD200618B0B /* PillList.swift in Sources */,

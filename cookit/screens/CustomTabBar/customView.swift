@@ -85,7 +85,7 @@ struct customView: View {
                     }
                 }
                 
-                NavigationLink(destination: clone()){
+                NavigationLink(destination:SwiftUIView()){
                     GeometryReader{ geo in
                         
                         if selectedTab == .ebook
@@ -107,14 +107,7 @@ struct customView: View {
                     }
 
                 }
-                /*
-                Button {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/// Swith to Ebook
-                    // selectedTab = .ebook
-                }
-            label: {
-            }
-            .tint(Color("lightGreen"))*/
+  
                 
                 NavigationLink(destination:ProfileView()){
                     GeometryReader{ geo in

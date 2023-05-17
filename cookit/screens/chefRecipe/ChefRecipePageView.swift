@@ -52,7 +52,7 @@ struct ChefRecipePageView: View {
                                                .font(.headline)
                                            Spacer()
                                        }
-                                   NavigationLink(destination:bookPageView())
+                                   NavigationLink(destination:Clone3())
                                    {
                                        Spacer()
                                        Text("Guy Fieri")

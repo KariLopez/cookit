@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        NavigationLink(destination: HomeView()){
+        //NavigationLink(destination: HomeView()){
             ZStack{
                 Color("emeraldGreen").ignoresSafeArea()
                 VStack {
@@ -18,7 +18,10 @@ struct LoginView: View {
                     
                     
                     InputView(label:"Username",inputColor:"lightGreen")
-                    InputView(label:"Password",inputColor:"lightGreen",secureField:true)
+                    NavigationLink(destination: HomeView()){
+                        InputView(label:"Password",inputColor:"lightGreen",secureField:true)
+                    }
+                   
                     
                     
                     Spacer()
@@ -28,7 +31,7 @@ struct LoginView: View {
                 }
             }
             
-        }
+       // }
         
     }
 }
